@@ -5,8 +5,9 @@
 h1{
   margin-bottom: 4%;
   text-align: center;
-  font-size: 50px;
+  font-size: 55px;
   color:#f57c00;
+  font-weight: 400;
 }
 #box1, #box2, #box3{
   margin-right: 6.25%;
@@ -15,15 +16,18 @@ h1{
   margin-left: 6.25%;
 }
 div#box1, div#box2, div#box3{
-  word-spacing: 2px;
-  background-color:#fafafa;
+  word-spacing: 1px;
+  background-color:#f4f4f4;
   padding-bottom: 320px;
   margin-bottom: 30px;
   position: relative;
+  border-bottom-right-radius:10%;
+  border-bottom-left-radius:10%;
+  border-top-left-radius:10%;
 }
 
 div span{
-  border: 1px solid #f57c00;
+  border: 2px solid #f57c00;
   background-color: #f57c00;
   color:white;
   position:absolute;
@@ -36,9 +40,11 @@ div span{
 }
 
 div p{
+  color:#212529;
   letter-spacing: 1px;
-  font-size: 120%;
-  line-height: 120%;
+  font-size: 115%;
+  font-weight: 100;
+  line-height: 140%;
   padding:3%;
   position:absolute;
   top:35px;
@@ -149,10 +155,18 @@ div p{
   }
   div#box3{
     padding-bottom: 200px;
+    border-radius:0%;
   }
+  div#box1,div#box2{
+    padding-bottom: 250px;
+    border-radius:0%;
+  } 
   div#box3 span{
     padding: 1%;
     width:25%;
+  }
+  div#box3 p{
+    top:30px;
   }
 }
 
@@ -204,17 +218,28 @@ div p{
   }
   div#box1, div#box2, div#box3{
     padding-bottom: 220px;
+    border-radius: 0%;
   }
   div span{
     padding: 1%;
     width:40%;
   }
   div p{
+    font-size: ;
     top:25px;
   }
 }
 @media (max-width:435px){
   div#box1, div#box2, div#box3{
-    padding-bottom: 350px;
+    padding-bottom: 250px;
+  }
+  div p{
+    font-size: 100%;
+  }
+  div span{
+    font-size: 115%;
+  }
+  h1{
+    font-size:200%;
   }
 }
